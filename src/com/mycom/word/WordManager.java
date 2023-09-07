@@ -13,7 +13,7 @@ public class WordManager {
 	}
 	
 	public int selectMenu() {
-		System.out.println("*** 영단어 마스터 ***\n"
+		System.out.print("*** 영단어 마스터 ***\n"
 				+ "***************\n"
 				+ "1. 모든 단어 보기\n"
 				+ "2. 수준별 단어 보기\n"
@@ -37,10 +37,9 @@ public class WordManager {
 				wordCRUD.addWord();		//addWord 함수는 WordCURD에 있는 함수임	=> WordCRUD 멤버 변수 선언 필요
 			}
 			else if (menu == 1) {	//list
-				
+				wordCRUD.listAll();
 			}
 		}
-		
 	}
 }
  
