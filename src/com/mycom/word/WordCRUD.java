@@ -58,12 +58,11 @@ public class WordCRUD implements ICRUD{		//뒷 내용 입력하고 WordCRUD 자�
 	
 	public void listAll() {		//단어 리스트 전체 출력 함수
 		System.out.println("--------------------------------");
-		for (int i = 1; i < list.size(); ++i) {	//리스트 처음에 번호
+		for (int i = 1; i <= list.size(); ++i) {	//리스트 처음에 번호
 			System.out.print(i + " ");
-			System.out.println(list.get(i).toString());
+			System.out.println(list.get(i-1).toString());
 		}
 		System.out.println("--------------------------------");
-		
 	}
 
 }
